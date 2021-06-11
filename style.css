@@ -127,7 +127,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+/* **-------------------------**()()()()()()()()()()**----------------------------- */
 /* *Font Imports  */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
@@ -157,6 +157,12 @@ body .container {
   padding-left: 20px;
   height: 40px;
   border-bottom: 1px solid var(--borderColor);
+}
+
+.container header h3 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 header svg {
@@ -257,6 +263,7 @@ p {
 main .authorPara, main .date {
     color: rgb(71, 71, 71);
     font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
 }
 
 main .date {
@@ -317,6 +324,7 @@ main > h3 {
 main .asideOne {
     position: relative;
     grid-column: 2/ span 3;
+    margin-bottom: 100px;
 }
 
 main .asideOne img {
@@ -363,4 +371,56 @@ main .asideOne p:not(p:first-of-type) {
 
 .imageParaFive, .imageParaSix, .imageParaSeven, .imageParaEight {
     top: 500px;
+}
+
+.asideOne hr {
+    width: 8%;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    border-top: 1px solid black;
+}
+
+.asideOne span {
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+}
+
+main > figure {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+main > figure > img {
+    width: 100%;
+}
+
+ figure .telescopeCaption {
+    width: 100%;
+}
+
+.footerPara {
+    font-size: 0.7rem;
+    font-family: sans-serif;
+}
+
+.mainFooterNavDiv {
+    display: flex;
+    align-items: center;
+}
+
+.mainFooterIcons {
+    justify-content: end;
+}
+
+.readBtn {
+    height: 34px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--buttonBg);
+    color: white;
 }
